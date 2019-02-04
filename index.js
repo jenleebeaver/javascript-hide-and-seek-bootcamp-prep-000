@@ -17,3 +17,12 @@ function deepestChild(){
    }
    return test
 }
+
+function increaseRankBy(n){
+  var lis = document 
+  .getElementByClass(".ranked-list")
+  .querySelectorAll("li");
+  for (let i = 0; i < lis.length; i++) {
+    lis[i].innerHTML = parseInt(lis[i].innerHTML) + n
+  }
+}

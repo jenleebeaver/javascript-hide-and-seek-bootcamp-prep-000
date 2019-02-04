@@ -20,8 +20,8 @@ function deepestChild(){
 
 function increaseRankBy(n){
   var lis = document
-  .getElementByClass(".ranked-list")
-  .querySelectorAll("li");
+  .getElementById("app")
+  .querySelectorAll("ul.unranked-list li");
   for (let i = 0; i < lis.length; i++) {
     lis[i].innerHTML = parseInt(lis[i].innerHTML) + n
   }
